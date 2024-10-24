@@ -11,7 +11,11 @@ public class ScoreButton : MonoBehaviour
 
     void Awake()
     {
-        scoreButton = GetComponent<Button>();
+        if (scoreButton == null)
+        {
+            scoreButton = GetComponent<Button>();
+        }
+        
         scoreButton.onClick.AddListener(PointUp);
     }
 

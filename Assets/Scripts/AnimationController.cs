@@ -11,15 +11,7 @@ public class AnimationController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
     }
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            OnMouseDown();
-        }      
-    }
-
+        
     void OnMouseDown()
     {
         animationVariable = (animationVariable + 1) % 3;
