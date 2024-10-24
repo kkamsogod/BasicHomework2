@@ -12,8 +12,6 @@ public class ScoreText : MonoBehaviour
     {
         scoreText = GetComponent<TextMeshProUGUI>();
 
-        scoreButton.scoreButton.onClick.AddListener(RefreshUI);
-
         scoreButton.OnScoreChanged += RefreshUI;
     }
 
